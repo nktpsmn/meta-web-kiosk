@@ -25,7 +25,7 @@ USER="root"
 
 ALTERNATIVE_${PN} = "x-session-manager"
 ALTERNATIVE_TARGET[x-session-manager] = "${bindir}/midori-session"
-ALTERNATIVE_PRIORITY = "50"
+ALTERNATIVE_PRIORITY = "60"
 
 MIDORI_SESSION_INITIAL_URL ??= "http://yoctoproject.org"
 
