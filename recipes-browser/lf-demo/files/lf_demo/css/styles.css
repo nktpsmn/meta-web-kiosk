@@ -6,10 +6,10 @@ body {
 }
 a {
 	color: #F30;
-	text-decoration: none;	
+	text-decoration: none;
 }
 img {
-	border: 0;	
+	border: 0;
 }
 
 #title {
@@ -19,19 +19,19 @@ img {
 	font: 11px Arial, Helvetica, sans-serif;
 	padding: 10px 20px;
 	position: fixed;
-	right: 0px;	
+	right: 0px;
 	text-align: right;
 	width: 100%;
 }
 	#title h1 {
 		font: 30px 'Ultra', Arial, serif;
-		margin: 0;	
+		margin: 0;
 		padding: 0;
 	}
 
 #thumbnails {
 	background: #000;
-	background: rgba(0, 0, 0, 0.8);	
+	background: rgba(0, 0, 0, 0.8);
 	height: 90px;
 	left: 0;
 	overflow: hidden;
@@ -55,7 +55,7 @@ img {
 		#thumbnails img {
 			width: 112px;
 		}
-			
+
 #pointer {
 	border: 2px solid #F30;
 	cursor: pointer;
@@ -102,11 +102,11 @@ img {
 	top: 100px;
 }
     #volume a {
-    	background: transparent url(../img/icons.png) no-repeat;
-    	display: block;
-    	height: 30px;
-    	text-indent: -9999px;
-    	width: 30px;
+	background: transparent url(../img/icons.png) no-repeat;
+	display: block;
+	height: 30px;
+	text-indent: -9999px;
+	width: 30px;
     }
 	#volume.all a {
 		background-position: 0 0;
@@ -117,7 +117,7 @@ img {
 	#volume.none a {
 		background-position: -60px 0;
 	}
-	
+
 .vegas-loading {
 	top: auto;
 	bottom: 40px;
@@ -128,7 +128,7 @@ img {
 }
 
 .jspHorizontalBar {
-	height: 5px;	
+	height: 5px;
 }
 	.jspHorizontalBar .jspTrack {
 		background: #333;
@@ -139,4 +139,4 @@ img {
 	}
 	#thumbnails:hover .jspHorizontalBar .jspDrag {
 		background: #F30;
-    }           
+    }

@@ -1,5 +1,5 @@
 // ----------------------------------------------------------------------------
-// Vegas - jQuery plugin 
+// Vegas - jQuery plugin
 // Add awesome fullscreen backgrounds to your webpages.
 // v 1.1 beta
 // Dual licensed under the MIT and GPL licenses.
@@ -14,10 +14,10 @@
 // to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 // copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
-// 
+//
 // The above copyright notice and this permission notice shall be included in
 // all copies or substantial portions of the Software.
-// 
+//
 // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -66,7 +66,7 @@
                     console.log( 'ok ')
                     return;
                 }
-                
+
                 $( window ).bind( 'resize.vegas', function( e ) {
                     resize( $new, options );
                 });
@@ -89,7 +89,7 @@
                         .prependTo( 'body' )
                         .fadeIn( options.fade, function() {
                             $( 'body' ).trigger( 'vegascomplete', [ this, step - 1 ] );
-                            options.complete.apply( this, [ step - 1 ] );    
+                            options.complete.apply( this, [ step - 1 ] );
                         });
                 }
 
@@ -172,9 +172,9 @@
                 backgrounds: backgrounds,
                 walk: function() {}
             };
-            
+
             $.extend( options, $.vegas.defaults.slideshow, settings );
-                        
+
             if ( options.backgrounds != backgrounds ) {
                 if ( !settings.step ) {
                     options.step = 0;
@@ -187,7 +187,7 @@
 
             backgrounds = options.backgrounds;
             step = options.step;
-            
+
             clearInterval( timer );
 
             if ( !backgrounds.length ) {
@@ -212,7 +212,7 @@
 
             if ( !keepPause ) {
                 paused = false;
-                
+
                 $( 'body' ).trigger( 'vegasstart', [ $current.get(0), step - 1 ] );
             }
 
@@ -302,7 +302,7 @@
                 return paused;
             }
         },
-        
+
         // Preload an array of backgrounds
         preload: function( backgrounds ) {
             for( var i in backgrounds ) {
@@ -347,7 +347,7 @@
 			'top': 'auto',
 			'bottom': 'auto',
 			'left': 'auto',
-			'right': 'auto'			
+			'right': 'auto'
         }
 
         if ( !isNaN( parseInt( options.valign ) ) ) {
@@ -358,7 +358,7 @@
             properties[ 'bottom' ] = 0;
         } else {
             properties[ 'top' ] = ( wh - newHeight ) / 2;
-        } 
+        }
 
         if ( !isNaN( parseInt( options.align ) ) ) {
             properties[ 'left' ] = ( 0 - ( newWidth - ww ) / 100 * parseInt( options.align ) ) + 'px';

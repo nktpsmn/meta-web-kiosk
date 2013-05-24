@@ -5,7 +5,7 @@ Buzz is a small but powerful Javascript library that allows you to easily take a
     var mySound = new buzz.sound( "/sounds/myfile", {
         formats: [ "ogg", "mp3", "acc" ]
     });
-	
+
     mySound.play()
         .fadeIn()
         .loop()
