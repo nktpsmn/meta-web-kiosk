@@ -27,6 +27,8 @@ ALTERNATIVE_${PN} = "x-session-manager"
 ALTERNATIVE_TARGET[x-session-manager] = "${bindir}/midori-session"
 ALTERNATIVE_PRIORITY = "50"
 
+MIDORI_SESSION_INITIAL_URL ??= "http://yoctoproject.org"
+
 do_install() {
         install -d ${D}/${bindir}
         install -m 0755 ${S}/midori-session ${D}/${bindir}
@@ -34,6 +36,8 @@ do_install() {
         install -m 0755 ${S}/change_midori_url.sh ${D}/${bindir}
         install -d ${D}/home/${USER}/.config/${BROWSER}/
         install ${S}/config ${D}/home/${USER}/.config/${BROWSER}/
+	sed -i -e "s#@INITIAL_URL@#${MIDORI_SESSION_INITIAL_URL}#" ${D}/${bindir}/midori-session
+	sed -i -e "s#@INITIAL_URL@#${MIDORI_SESSION_INITIAL_URL}#" ${D}/home/${USER}/.config/${BROWSER}/config
 }
 
 FILES_${PN} += "/home/${USER}/.config/${BROWSER}/config"

@@ -19,6 +19,6 @@ done
 
 /usr/bin/auto_restart_with_new_config.sh &
 sleep 2
-/usr/bin/change_midori_url.sh http://fff.cmiscm.com
+/usr/bin/change_midori_url.sh @INITIAL_URL@
 
 exec matchbox-window-manager
