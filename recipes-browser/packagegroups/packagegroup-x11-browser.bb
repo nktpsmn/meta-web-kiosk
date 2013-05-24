@@ -15,5 +15,4 @@ RDEPENDS_${PN} = "\
     matchbox-keyboard-im    \
     liberation-fonts \
     midori  \
-    ssh-keys-server \
     "
