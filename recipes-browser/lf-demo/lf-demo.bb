@@ -10,6 +10,7 @@ SRC_URI = "file://lf_demo/*"
 S = "${WORKDIR}"
 
 USER = "root"
+RDEPENDS_${PN}=" gst-plugins-base-playbin "
 
 do_install() {
 	install -d ${D}/home/${USER}
