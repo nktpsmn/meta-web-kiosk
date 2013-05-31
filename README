@@ -67,3 +67,6 @@ https://wiki.yoctoproject.org/wiki/Web_Application_for_Interactive_Kiosk_Devices
 All metadata is MIT licensed unless otherwise stated. Source code included
 in tree for individual recipes is under the LICENSE stated in each recipe
 (.bb file) unless otherwise stated.
+
+All images from lf_demo are copyright all rights reserved to
+Alex Georgescu <http://www.flickr.com/people/42646897@N02/>
